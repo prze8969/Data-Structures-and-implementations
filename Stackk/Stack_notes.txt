@@ -1,0 +1,23 @@
+Stack implemented using array
+you need three inital paramenter,
+empty array
+capacity of the array
+and a pointer point at the top of the array
+
+It follows LIFO or last in first out principle
+
+the stack works as 5,4,2,6,5
+if we pop then 5,4,2,6
+if we push then 5,4,2,6,9
+
+
+three functions are there in it
+push
+pop
+peek
+
+we check for two conditions
+underflow => popping on empty stack
+overflow => pushing on full stack
+
+thats it , thats stack for ya~
