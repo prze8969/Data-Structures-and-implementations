@@ -1,0 +1,62 @@
+ Mid Sem Syllabus of Data strucutes (VESIT)
+
+Module 1: Introduction
+What is data
+Introduction to data structures
+Algorithms
+Algorithms and design approach top down and bottom up
+
+Control systems in algorithm, sequence, decision, repetition
+what is data structure, defination
+data structure storage and organisation
+why do we need data structures
+application of data structures
+
+Classification of data strucutres
+Types of DS , primitive, linear , non linear
+stack
+queue
+linkedlist
+tree
+graph
+linear vs nonlinear ds
+operation on ds, create delete select update
+
+abstract data type
+concept of abstraction
+advantages of adt
+
+
+Module 2: Stacks and queues
+Stacks
+intro to LIFO
+Array implementations and operations
+Parenthesis checker
+Infix to Postfix conversion and evaluation
+Recursion and types
+
+Queues
+Introduction to FIFO
+Array implementations and operations
+Circular Queue
+Priority Queue
+Deque
+Applications of queue
+
+
+Module 3: Linked Lists
+Introduction to LL
+Strcuture of Node
+LL in memory
+Multiple LL in memory
+LL vs array
+Insertion and deletion memory view
+Garbage collection in java
+types of LL - singly, doubly , circular
+Implementations and operations of SLL
+Implementations and operations of CLL
+Implementations and opertions of DLL
+
+
+Stack using LL
+Queue using LL
