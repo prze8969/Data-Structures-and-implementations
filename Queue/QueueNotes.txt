@@ -1,0 +1,108 @@
+Queue in general:
+Based on First in first out principle
+
+following functions are required:
+isFull , isEmpty, enqueue , dequeue , display
+
+Linear queue:
+Initial variables : front , rear , arr, capcity
+
+isFull :
+	if rear == capacity -1
+
+isEmpty:
+	if front == -1
+
+Enqueue:
+	condition 1:
+		front = rear = -1
+			front = rear = 0
+	condition 2:
+		if front and rear are some arbirary number
+			arr[rear] = value
+			rear++
+	condition 3:
+		rear == capacity -1
+			the array is full and we cant add anything else to it
+sequence of conditions are , 3->1->2
+
+Dequeue:
+	condition 1:
+		front = rear = -1:
+			cant dequeue any thing , array empty
+			return
+	-------
+		front and rear are some arbitrary number
+			dequeuedValue = arr[front]
+			front++
+	condition 3:
+		if front == rear
+			front = rear = -1
+			since the array got empty fully due to dequeue
+	return dequeuedValue
+
+display:
+	condition 1:
+		if front == -1
+	condition 2:
+		if front is any arbitrary value
+			i = front
+			while i< rear
+			print arr[i]
+			i++
+
+Circular queue:
+variables : front, rear, capacity, arr
+
+isEmpty
+	if front == -1
+
+isFull
+	if front == (rear+1)%capacity
+
+Useful note:
+instead of using rear++ like in linear queue , we use (rear+1)%capacity
+all this does is increment rear just like before
+but when it reaches capacity or more than the capacity it gets back to
+first spaces, AKA WRAPS  around
+
+
+enqueue:
+	condition 1:
+		if front = rear = -1
+			front = rear = 0
+	condition 2:
+		if front and rear are any arbitrary values
+			arr[rear] = value
+			rear = (rear+1)%capacity
+	condition 3:
+		if front == (rear+1)%capacity
+			the queue is full
+
+dequeue:
+	condition 1:
+		if front = rear = -1
+			The queue is empty u cant dequeue
+	--------------
+		if front and rear are arbitriray values
+			valueDequeued = arr[front]
+			front = (front+1)%capacity
+	condition 3:
+		if front == rear
+			the queue is empty
+			hence front = rear = -1
+	return valueDequeued
+
+display:
+	condition 1:
+		if front = -1
+			queue is empty
+	condition 2:
+		i = front
+		while i!=rear
+			print arr[i]
+			i = (i+1)%capacity
+	
+			
+
+
