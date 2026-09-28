@@ -1,3 +1,26 @@
+ALGORITHM FOR STACK
+
+--PUSH--
+1.IF TOP = MAX-1 
+	PRINT OVERFLOW
+2.SET TOP = TOP + 1
+3.SET STACK[TOP] = VALUE
+4. END
+
+--POP--
+1.IT TOP == -1
+	PRINT UNDERFLOW
+2.SET VAL = STACK[TOP]
+3 TOP = TOP -1
+4. END
+
+--PEEK--
+1.IF TOP == -1
+	PRINT EMPTY
+2. RETURN STACK[TOP]
+3.END
+
+
 class Stack{
 	int[] arr;
 	int capacity;
